@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ItemGenerator : MonoBehaviour {
 	//スクリプトでアイテムを生成するためには、
-	//何のPrefabからインスタンスを作り、それをどこに配置するのかを記述する必要あある。
+	//何のPrefabからインスタンスを作り、それをどこに配置するのかを記述する必要がある。
 
 	//carPrefabを入れるPrefab変数を宣言。インスペクタで各Prefabの実体を代入
 	public GameObject carPrefab;
@@ -18,10 +18,13 @@ public class ItemGenerator : MonoBehaviour {
 	//アイテムを出すx方向の範囲
 	private float posRange = 3.4f;
 
+
 	// Use this for initialization
 	void Start () {
+		
+	
 		//アイテムは全てStart関数で生成
-		//一定の距離（15mずつスペースおあけて）ごとにアイテムを生成
+		//一定の距離（15mずつスペースあけて）ごとにアイテムを生成
 		for (int i = startPos; i < goalPos; i+=15) {
 			//このままではアイテムが整列してしまい不自然なので、
 			//z方向にランダムに配置されるようにRandom.Range関数を使ってz方向の位置を調節
@@ -63,6 +66,8 @@ public class ItemGenerator : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+
 
 	}
 }
