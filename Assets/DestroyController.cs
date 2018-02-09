@@ -12,7 +12,6 @@ public class DestroyController : MonoBehaviour {
 	void Start () {
 		//Unityちゃんのオブジェクトを取得※
 		this.unitychan = GameObject.Find("unitychan");
-
 	}
 	
 	// Update is called once per frame
